@@ -1,0 +1,10 @@
+{{!-- <label>Name:</label>
+{{input type="text" value=firstUser.name}}
+
+<label>Jobs</label>
+{{ input type="text" value=firstUser.job }}
+
+<button class="btn" type="submit">Submit</button> --}}
+{{input type="text" key-up=(action 'filterList') value=firstName placeholder="Enter first name"}}
+{{yield filterUsers}}
+<button {{action 'newTest'}}>click</button>

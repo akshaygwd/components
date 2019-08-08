@@ -1,0 +1,7 @@
+{{#user-filter here=(action 'testActions') users=users as |people|}}
+{{#each people as |user|}}
+  <li><h2>{{user.name}}</h2>
+  <p>{{user.job}}</p></li>
+{{/each}}
+{{/user-filter}}
+{{outlet}}
